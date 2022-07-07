@@ -10,12 +10,14 @@ local featureDef =	{
 	blocking			=true,
 	upright				=true,
 	hitdensity			=0,
-	--energy 			= 100,
+	energy 				= 200,
 	metal				=0,
-	--damage			= 20,
+	damage				= 2000,
 	flammable			=true,
 	reclaimable			=true,
 	autoreclaimable		=true,
+	Mass				=1000,
+	
 
 	customparams = {
 		author = "Beherith, 0 A.D.",
