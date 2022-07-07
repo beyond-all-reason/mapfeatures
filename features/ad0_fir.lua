@@ -1,5 +1,3 @@
-
-
  -- its a table of index: s3oname
 local ad0features = {
 "fir_tree_small_1__tree_fir_tall_1",
