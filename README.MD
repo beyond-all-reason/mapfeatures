@@ -14,7 +14,7 @@ Current Feature Sets:
 
 - allpinesb_ad0_[green|brown|snowgreen|snow]_[a|b|c]_[xs|s|m|l|xl|xxl] : Pine trees, green, brown and snowy in all sizes
 - ad0_banyan_[1-6] : A tropical tree surrounded by aerial prop roots
-- cedar_atlas_[nil|sapling|young]_[1-3]__cedar_atlas_[1-2|dead] : A Coniferous tree that likes to be close to water
+- cedar_atlas_[nil|sapling|young]_[1-3]__cedar_atlas_[1-2|dead] : A coniferous tree that likes to be close to water
 - ad0_aleppo2_[sparse|dense|double]_[dark|med|light|dead]_[s|m|l|xl] : lovely aleppo trees 
 - ad0_senegal_[1-7][ |_large] : Very nice palm trees
 - agorm_rock[1-5] : Small grey round rocks
