@@ -20,4 +20,5 @@ Current Feature Sets:
 - cycas[1-8] : Ferns, some with rocks around them
 - mushroom0[1-9] : Orange colored mushrooms
 - ad0_aleppo2_[sparse|dense|double]_[dark|med|light|dead]_[s|m|l|xl] : lovely aleppo trees 
-
+- ad0_banyan_[1-6] : A tropical tree surrounded by aerial prop roots
+- cedar_atlas_[nil|sapling|young]_[1-3]__cedar_atlas_[1-2|dead]
