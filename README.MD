@@ -22,6 +22,7 @@ Current Feature Sets:
 - cycas[1-8] : Ferns, some with rocks around them
 - euro_birch_tree_0[1-8]_[1-4] : A deciduous tree with white bark that grows at higher altitudes
 - fir_tree_[small|tall]_[1-8]__tree_fir_tall_[1-5] : Pale green fir trees
+- kapok[1-4] : A tropical tree with thick roots that grows in rainforests
 - mushroom0[1-9] : Orange colored mushrooms
 - mushroom1[1-9] : Purple colored mushrooms
 - mushroom2[1-9] : Tan colored mushrooms
