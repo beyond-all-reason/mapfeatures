@@ -10,7 +10,7 @@ local Base = {
 	autoreclaimable		= true, 	
 
 	metal = 0,
-	energy = 50,
+	energy = 100,
 	
 	height				= "20",
 	damage = 250,
