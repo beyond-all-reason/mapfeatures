@@ -12,12 +12,12 @@ local featureDef	=	{
 	footprintZ			= 1,
 	height				= 16,
 	hitdensity			= 0,
-	blocking			= true,
 	metal				= 0,
 	reclaimable			= true,
-	autoreclaimable		= true, 	
+	autoreclaimable		= true,
 	world				= "All Worlds",
-	customparams = { 
+	collisionvolumetype = "CylY",
+	customparams = {
 		author = "Beherith",
 		category = "Plants",
 		set = "Beheriths Cacti",
@@ -25,12 +25,12 @@ local featureDef	=	{
 		normaltex = "unittextures/pedro-normal.tga",
 		treeshader = "no",
 		randomrotate = "true",
-	}, 
+	},
 }
 
 local pedros = {}
 
-for i = 1, 6 do 
+for i = 1, 6 do
 	local name = 'pedro' .. i
 	local def = {}
 	for k, v in pairs(featureDef) do
@@ -39,6 +39,15 @@ for i = 1, 6 do
 	def.name = name
 	def.object =  name .. ".s3o"
 	pedros[name] = def
+	if i < 2 then
+		--pedros[name].collisionvolumetype = "Box"
+		pedros[name].collisionvolumescales = "12 128 12"
+		--pedros[name].collisionvolumeoffsets ="0 8 0"
+	else
+		--pedros[name].collisionvolumetype = "CylY"
+		pedros[name].collisionvolumescales = "24 112 24"
+		--pedros[name].collisionvolumeoffsets ="0 16 0"
+	end
 end
 
 return pedros

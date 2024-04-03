@@ -1,5 +1,3 @@
-
-
 local Base = {
 	description = "Orange Mushrooms",
 
@@ -16,6 +14,9 @@ local Base = {
 	
 	height				= "20",
 	damage = 250,
+	collisionvolumeoffsets = "0 0 0",
+    collisionvolumescales = "16 16 16",
+    collisionvolumetype = "CylY",
 
 	customparams = {
 		author = "Lathan",

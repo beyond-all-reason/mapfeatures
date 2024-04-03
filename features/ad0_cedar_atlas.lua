@@ -14,8 +14,9 @@ local ad0features = {
 "cedar_atlas_sapling_1__cedar_atlas_2",
 "cedar_atlas_young_1__cedar_atlas_1",
 "cedar_atlas_young_1__cedar_atlas_2",
-"cedar_atlas_young_2__cedar_atlas_1",
 "cedar_atlas_young_2__cedar_atlas_2",
+--
+"cedar_atlas_young_2__cedar_atlas_1",
 "cedar_atlas_young_3__cedar_atlas_1",
 "cedar_atlas_young_3__cedar_atlas_2",
 "fir_sapling_1__cedar_atlas_2",
@@ -34,10 +35,10 @@ local base = {
 	autoreclaimable = true,
 	reclaimable = true,
 	category = "Vegetation",
+	crushresistance = 30,
 	mass = 1000,
-	collisionvolumetype = "box",
-	collisionvolumescales = "10 64 10",
-	collisionvolumeoffsets = "0 16 0",
+	collisionvolumetype = "CylY",
+	collisionvolumeoffsets = "0 22 0",
 }
 
 for i,name in ipairs(ad0features) do
@@ -46,8 +47,8 @@ for i,name in ipairs(ad0features) do
 		ad0features[name][k] = v
 	end
 
-	ad0features[name].description = name
-	ad0features[name].name = name
+	ad0features[name].description = "Cedar tree"
+	ad0features[name].name = "Cedar tree"
 	ad0features[name].object = "ad0_cedar_atlas/" .. name .. ".s3o"
 	ad0features[name].customparams = {
 		model_author = "Beherith, 0 A.D.",
@@ -59,6 +60,11 @@ for i,name in ipairs(ad0features) do
 		set = "0AD features",
 	}
 
+	if i > 13 then
+		ad0features[name].collisionvolumescales = "24 100 24"
+	elseif i <= 13 then
+		ad0features[name].collisionvolumescales = "24 140 24"
+	end
+
 end
 return ad0features
-		
