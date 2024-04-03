@@ -12,9 +12,8 @@ The criteria for inclusion in this set:
 
 Current Feature Sets:
 
-
-- ad0_banyan_[1-6] : A tropical tree surrounded by aerial prop roots
 - ad0_aleppo2_[sparse|dense|double]_[dark|med|light|dead]_[s|m|l|xl] : lovely aleppo trees 
+- ad0_banyan_[1-6] : A tropical tree surrounded by aerial prop roots
 - ad0_senegal_[1-7][ |_large] : Very nice palm trees
 - agorm_rock[1-5] : Small grey round rocks
 - allpinesb_ad0_[green|brown|snowgreen|snow]_[a|b|c]_[xs|s|m|l|xl|xxl] : Pine trees, green, brown and snowy in all sizes
