@@ -1,5 +1,5 @@
 local Base = {
-	description = "Orange Mushroom",
+	description = "Orange Mushrooms",
 
 	footprintx = 2,
 	footprintz = 2,
