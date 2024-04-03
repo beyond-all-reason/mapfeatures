@@ -11,6 +11,7 @@ local featureDef	=	{
 	world				="All Worlds",
 	blocking			=true,
 	category			="Vegetation",
+	crushresistance = 30,
 	description			="Aleppo Pine",
 	footprintx			=1,
 	footprintz			=1,
@@ -21,7 +22,7 @@ local featureDef	=	{
 	reclaimable			=true,
 	autoreclaimable		=true,
 	upright				=false,
-	collisionvolumetype = "box",
+	collisionvolumetype = "CylY",
 	collisionvolumescales = "8 64 8",
 	collisionvolumeoffsets = "0 16 0",
 	customparams = {
@@ -33,7 +34,7 @@ local featureDef	=	{
 		category = "Plants",
 		set = "Aleppo Pine Trees",
 	},
-} 
+}
 
 local aleppopines = {}
 
@@ -51,7 +52,7 @@ for _,dense in ipairs({"sparse","dense","double"}) do
 			def.energy = 200*SCALEFACTOR
 			def.mass = 20*SCALEFACTOR
 			def.maxdamage = 500*SCALEFACTOR
-			
+
 			aleppopines[name] = def
 		end
 	end

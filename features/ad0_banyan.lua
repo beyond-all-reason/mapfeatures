@@ -22,11 +22,8 @@ local base = {
 	autoreclaimable = true,
 	reclaimable = true,
 	category = "Vegetation",
-	crushresistance = 9999,
+	crushresistance = 150,
 	mass = 100,
-	collisionvolumetype = "box",
-	collisionvolumescales = "24 64 24",
-	collisionvolumeoffsets = "0 16 0",
 }
 
 for i,name in ipairs(ad0features) do
@@ -47,7 +44,15 @@ for i,name in ipairs(ad0features) do
 		category = "Plants",
 		set = "0AD features",
 	}
+	if i < 3 then
+		ad0features[name].collisionvolumetype = "Box"
+		ad0features[name].collisionvolumescales = "24 72 72"
+		ad0features[name].collisionvolumeoffsets ="12 8 8"
+	else
+		ad0features[name].collisionvolumetype = "CylY"
+		ad0features[name].collisionvolumescales = "24 132 24"
+		ad0features[name].collisionvolumeoffsets ="0 16 0"
+	end
 
 end
 return ad0features
-		

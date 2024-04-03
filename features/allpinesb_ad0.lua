@@ -10,14 +10,14 @@ local featureDef =	{
 	blocking			=true,
 	upright				=true,
 	hitdensity			=0,
-	energy 				= 200,
+	--energy 			= 100,
 	metal				=0,
-	damage				= 2000,
+	--damage			= 20,
+	crushresistance = 30,
 	flammable			=true,
 	reclaimable			=true,
 	autoreclaimable		=true,
-	Mass				=1000,
-	
+	collisionvolumetype = "CylY",
 
 	customparams = {
 		author = "Beherith, 0 A.D.",
@@ -49,6 +49,19 @@ for _,treecolor in pairs({'green','brown','snow','snowgreen'}) do
 			def.height = sizeidx * 10 + 10
 			def.damage = sizeidx * 20
 			allpinesb[name] = def
+			if treesize == 'xs' then
+				allpinesb[name].collisionvolumescales = "8 24 8"
+			elseif treesize == 's' then
+				allpinesb[name].collisionvolumescales = "16 48 16"
+			elseif treesize == 'm' then
+				allpinesb[name].collisionvolumescales = "20 72 20"
+			elseif treesize == 'l' then
+				allpinesb[name].collisionvolumescales = "24 96 24"
+			elseif treesize == 'xl' then
+				allpinesb[name].collisionvolumescales = "28 120 28"
+			elseif treesize == 'xxl' then
+				allpinesb[name].collisionvolumescales = "32 144 32"
+			end
 		end
 	end
 end

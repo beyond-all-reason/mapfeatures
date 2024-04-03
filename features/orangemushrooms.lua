@@ -1,7 +1,5 @@
-
-
 local Base = {
-	description = "Orange Mushrooms",
+	description = "Mushroom",
 
 	footprintx = 2,
 	footprintz = 2,
@@ -12,10 +10,13 @@ local Base = {
 	autoreclaimable		= true, 	
 
 	metal = 0,
-	energy = 100,
+	energy = 50,
 	
 	height				= "20",
 	damage = 250,
+	collisionvolumeoffsets = "0 0 0",
+    collisionvolumescales = "16 16 16",
+    collisionvolumetype = "CylY",
 
 	customparams = {
 		author = "Lathan",

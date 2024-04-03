@@ -4,7 +4,7 @@ local Base = {
 
 	footprintx = 2,
 	footprintz = 2,
-	blocking = false,
+	blocking = true,
 	upright = true,
 
 	metal = 0,
@@ -12,6 +12,11 @@ local Base = {
 
 	damage = 250,
 	flammable = true,
+	crushresistance = 30,
+
+	collisionvolumetype = "CylY",
+	collisionvolumescales = "24 32 24",
+	collisionvolumeoffsets = "0 9 0",
 
 	customparams = {
 		author = "Lathan",

@@ -1,20 +1,23 @@
+
+
  -- its a table of index: s3oname
 local ad0features = {
-"fir_tree_small_1__tree_fir_tall_1",
-"fir_tree_small_1__tree_fir_tall_2",
-"fir_tree_small_1__tree_fir_tall_3",
-"fir_tree_small_1__tree_fir_tall_4",
-"fir_tree_small_1__tree_fir_tall_5",
 "fir_tree_small_2__tree_fir_tall_1",
 "fir_tree_small_2__tree_fir_tall_2",
 "fir_tree_small_2__tree_fir_tall_3",
 "fir_tree_small_2__tree_fir_tall_4",
 "fir_tree_small_2__tree_fir_tall_5",
+--
 "fir_tree_small_3__tree_fir_tall_1",
 "fir_tree_small_3__tree_fir_tall_2",
 "fir_tree_small_3__tree_fir_tall_3",
 "fir_tree_small_3__tree_fir_tall_4",
 "fir_tree_small_3__tree_fir_tall_5",
+"fir_tree_small_1__tree_fir_tall_1",
+"fir_tree_small_1__tree_fir_tall_2",
+"fir_tree_small_1__tree_fir_tall_3",
+"fir_tree_small_1__tree_fir_tall_4",
+"fir_tree_small_1__tree_fir_tall_5",
 "fir_tree_tall_1__tree_fir_tall_1",
 "fir_tree_tall_1__tree_fir_tall_2",
 "fir_tree_tall_1__tree_fir_tall_3",
@@ -64,12 +67,15 @@ local base = {
 	energy = 250,
 	metal = 0,
 	hitdensity = 0,
-	damage = 2500,
+	maxdamage = 250,
 	flammable = true,
 	autoreclaimable = true,
 	reclaimable = true,
 	category = "Vegetation",
-	crushresistance = 20,
+	crushresistance = 30,
+	mass = 20,
+	collisionvolumetype = "CylY",
+	collisionvolumeoffsets = "-2 12 0",
 }
 
 for i,name in ipairs(ad0features) do
@@ -91,6 +97,11 @@ for i,name in ipairs(ad0features) do
 		set = "0AD features",
 	}
 
+	if i > 5 then
+		ad0features[name].collisionvolumescales = "24 184 24"
+	elseif i <= 5 then
+		ad0features[name].collisionvolumescales = "24 84 24"
+	end
+
 end
 return ad0features
-		
