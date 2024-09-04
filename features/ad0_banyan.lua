@@ -32,7 +32,7 @@ for i,name in ipairs(ad0features) do
 		ad0features[name][k] = v
 	end
 
-	ad0features[name].description = "Banyan"
+	ad0features[name].description = "Banyan tree"
 	ad0features[name].name = name
 	ad0features[name].object = "ad0_banyan/" .. name .. ".s3o"
 	ad0features[name].customparams = {

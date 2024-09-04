@@ -16,7 +16,7 @@ local Base = {
 
 	collisionvolumetype = "CylY",
 	collisionvolumescales = "24 32 24",
-	collisionvolumeoffsets = "0 9 0",
+	collisionvolumeoffsets = "0 0 0",
 
 	customparams = {
 		author = "Lathan",
